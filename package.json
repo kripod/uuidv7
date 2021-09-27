@@ -3,9 +3,9 @@
 	"version": "0.1.1",
 	"description": "UUIDv7 generator with millisecond precision",
 	"keywords": [
-		"id",
+		"id-generator",
 		"k-sortable",
-		"collision-resistant"
+		"collision-resistance"
 	],
 	"homepage": "https://github.com/kripod/uuidv7#readme",
 	"bugs": "https://github.com/kripod/uuidv7/issues",
