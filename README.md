@@ -4,7 +4,7 @@ UUIDv7 generator based on the [RFC4122 update proposal](https://www.ietf.org/id/
 
 [![npm (scoped)](https://img.shields.io/npm/v/@kripod/uuidv7)](https://www.npmjs.com/package/@kripod/uuidv7)
 [![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@kripod/uuidv7)](https://bundlephobia.com/package/@kripod/uuidv7)
-[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/kripod/uuidv7/node-ci/main)](https://github.com/kripod/uuidv7/actions/workflows/node-ci.yml)
+[![GitHub Workflow Status (branch)](https://img.shields.io/github/workflow/status/kripod/uuidv7/node-ci/main)](https://github.com/kripod/uuidv7/actions/workflows/node-ci.yaml)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./CODE_OF_CONDUCT.md)
 
 ## Usage
