@@ -10,7 +10,12 @@ export default defineConfig([
 				format: "esm",
 			},
 		],
-		plugins: [ts({ transpiler: "babel" })],
+		plugins: [
+			ts({
+				transpiler: "babel",
+				browserslist: "defaults",
+			}),
+		],
 	},
 	{
 		input: "src/node.ts",
@@ -24,7 +29,12 @@ export default defineConfig([
 				format: "cjs",
 			},
 		],
-		plugins: [ts({ transpiler: "babel" })],
+		plugins: [
+			ts({
+				transpiler: "babel",
+				browserslist: "maintained node versions",
+			}),
+		],
 		external: ["crypto"],
 	},
 ]);
