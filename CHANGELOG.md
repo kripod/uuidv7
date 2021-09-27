@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.2] - 2021-09-27
+
+### Changed
+
+**meta:** package keywords
+
 ## [0.1.1] - 2021-09-27
 
 ### Changed
@@ -19,6 +25,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - initial release
 
-[unreleased]: https://github.com/kripod/uuidv7/compare/v0.1.1...HEAD
+[unreleased]: https://github.com/kripod/uuidv7/compare/v0.1.2...HEAD
+[0.1.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/kripod/uuidv7/releases/tag/v0.1.0
