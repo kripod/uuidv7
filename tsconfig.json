@@ -1,0 +1,13 @@
+{
+	"exclude": ["dist/**/*"],
+	"compilerOptions": {
+		"target": "ES2017",
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"declaration": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true
+	}
+}

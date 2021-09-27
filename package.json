@@ -1,0 +1,48 @@
+{
+	"name": "@kripod/uuidv7",
+	"version": "0.1.0",
+	"description": "UUIDv7 generator with millisecond precision",
+	"keywords": [
+		"id",
+		"k-sortable",
+		"collision-resistant"
+	],
+	"homepage": "https://github.com/kripod/uuidv7#readme",
+	"bugs": "https://github.com/kripod/uuidv7/issues",
+	"repository": "kripod/uuidv7",
+	"license": "MIT",
+	"author": "Kristóf Poduszló <kripod@protonmail.com>",
+	"sideEffects": false,
+	"exports": {
+		"node": {
+			"import": "./dist/node.mjs",
+			"require": "./dist/node.js"
+		},
+		"default": "./dist/default.mjs"
+	},
+	"main": "./dist/node.js",
+	"module": "./dist/default.mjs",
+	"types": "./dist/default.d.ts",
+	"files": [
+		"dist/"
+	],
+	"scripts": {
+		"build": "rollup --config --configPlugin rollup-plugin-ts",
+		"clean": "git clean --force -dx --exclude node_modules/",
+		"fix": "npm run fix:prettier",
+		"fix:prettier": "npm run lint:prettier -- --write",
+		"lint": "npm run lint:typescript && npm run lint:prettier",
+		"lint:prettier": "prettier --check --ignore-path ./.gitignore .",
+		"lint:typescript": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@types/node": "^16.10.1",
+		"prettier": "^2.4.1",
+		"rollup": "^2.57.0",
+		"rollup-plugin-ts": "^1.4.7",
+		"typescript": "^4.4.3"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
