@@ -13,7 +13,8 @@ export function uuidv7Builder(
 	let seq = 0;
 
 	return () => {
-		const timestamp = Date.now();
+		// Negative system clock adjustments are ignored to keep monotonicity
+		const timestamp = Math.max(Date.now(), prevTimestamp);
 		seq = timestamp === prevTimestamp ? seq + 1 : 0;
 		prevTimestamp = timestamp;
 
