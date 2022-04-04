@@ -1,6 +1,6 @@
 # UUIDv7
 
-UUIDv7 generator based on the [RFC4122 update proposal (draft-02)](https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-02.html)
+UUIDv7 generator based on the [RFC4122 update proposal (draft-03)](https://www.ietf.org/archive/id/draft-peabody-dispatch-new-uuid-format-03.html)
 
 [![npm (scoped)](https://img.shields.io/npm/v/@kripod/uuidv7)](https://www.npmjs.com/package/@kripod/uuidv7)
 [![npm bundle size (scoped)](https://img.shields.io/bundlephobia/minzip/@kripod/uuidv7)](https://bundlephobia.com/package/@kripod/uuidv7)
@@ -21,7 +21,7 @@ console.log(id); // Example: 03475b12-c000-7000-8b18-6150ad2d0c05
 - K-sortable with 1ms precision _(Safari disallows sub-ms timing [to defend against Spectre](https://webkit.org/blog/8048/what-spectre-and-meltdown-mean-for-webkit/))_
 - Time-ordered when sorted lexicographically
 - Collision-resistant with distributed systems in mind
-- Works until the year 4147, after which timestamps would overflow
+- Works until the year 10889, after which timestamps would overflow
 
 ## Compatibility
 
