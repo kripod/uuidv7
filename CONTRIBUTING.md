@@ -16,7 +16,7 @@ Please keep the scope of each pull request to **one** specific feature or fix.
 
 ### Prequisites
 
-- [Node.js](https://nodejs.org/) 12.20+
+- [Node.js](https://nodejs.org/) LTS
 
 ### Workflow
 
