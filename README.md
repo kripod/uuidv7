@@ -13,7 +13,7 @@ UUIDv7 generator based on the [RFC4122 update proposal (draft-03)](https://www.i
 import { uuidv7 } from "@kripod/uuidv7";
 
 let id = uuidv7();
-console.log(id); // Example: 03475b12-c000-7000-8b18-6150ad2d0c05
+console.log(id); // Example: 00ccebbc-13e0-7000-8b18-6150ad2d0c05
 ```
 
 ## Key features
@@ -57,12 +57,11 @@ console.log(id); // Example: 03475b12-c000-7000-8b18-6150ad2d0c05
 
 ## Binary structure
 
-- `unixts`: Unix timestamp – 36 bits
-- `msec`: Milliseconds – 12 bits
+- `unix_ts_ms`: Milliseconds elapsed since the Unix epoch – 48 bits
 - `ver`: UUID version (`7`) – 4 bits
-- `seq`: Monotonic sequence counter for more precise sorting – 12 bits
+- `rand_a`: Monotonic sequence counter for more precise sorting – 12 bits
 - `var`: UUID variant (`0b10`) – 2 bits
-- `rand`: Cryptographically strong random data – 62 bits
+- `rand_b`: Cryptographically strong random data – 62 bits
 
 <div aria-hidden="true">
 
@@ -70,13 +69,13 @@ console.log(id); // Example: 03475b12-c000-7000-8b18-6150ad2d0c05
  0                   1                   2                   3
  0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1
 ┌─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┐
-│                            unixts                             │
+│                          unix_ts_ms                           │
 ├─┴─┴─┴─┼─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┼─┴─┴─┴─┼─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┤
-│unixts │         msec          │  ver  │          seq          │
+│          unix_ts_ms           │  ver  │        rand_a         │
 ├─┴─┼─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┤
-│var│                         rand                              │
+│var│                        rand_b                             │
 ├─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┤
-│                             rand                              │
+│                            rand_b                             │
 └─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┴─┘
 ```
 
