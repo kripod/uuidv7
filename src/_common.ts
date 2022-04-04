@@ -23,15 +23,15 @@ export function uuidv7Builder(
 
 		const var_rand = new Uint32Array(2);
 		getRandomValues(var_rand);
-		var_rand[0] = (VAR << (32 - VAR_BITS)) | (var_rand[0] >>> VAR_BITS);
+		var_rand[0] = (VAR << (32 - VAR_BITS)) | (var_rand[0]! >>> VAR_BITS);
 
 		const digits =
 			unixts.toString(16).padStart(UNIXTS_BITS / 4, "0") +
 			msec.toString(16).padStart(MSEC_BITS / 4, "0") +
 			VER_DIGIT +
 			seq.toString(16).padStart(SEQ_BITS / 4, "0") +
-			var_rand[0].toString(16).padStart((VAR_BITS + RAND_BITS) / 2 / 4, "0") +
-			var_rand[1].toString(16).padStart((VAR_BITS + RAND_BITS) / 2 / 4, "0");
+			var_rand[0]!.toString(16).padStart((VAR_BITS + RAND_BITS) / 2 / 4, "0") +
+			var_rand[1]!.toString(16).padStart((VAR_BITS + RAND_BITS) / 2 / 4, "0");
 
 		return (
 			digits.slice(0, 8) +

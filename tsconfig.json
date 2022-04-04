@@ -1,13 +1,13 @@
 {
 	"exclude": ["dist/**/*"],
+	"extends": "@tsconfig/strictest",
 	"compilerOptions": {
-		"target": "ES2017",
+		"target": "ESNext",
 		"module": "ESNext",
 		"moduleResolution": "Node",
-		"esModuleInterop": true,
 		"isolatedModules": true,
 		"declaration": true,
-		"strict": true,
-		"forceConsistentCasingInFileNames": true
+		"noUnusedLocals": false,
+		"noUnusedParameters": false
 	}
 }
