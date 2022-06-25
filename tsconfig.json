@@ -4,7 +4,7 @@
 	"compilerOptions": {
 		"target": "ESNext",
 		"module": "ESNext",
-		"moduleResolution": "Node",
+		"moduleResolution": "NodeNext",
 		"isolatedModules": true,
 		"declaration": true,
 		"noUnusedLocals": false,
