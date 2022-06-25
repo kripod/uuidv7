@@ -27,7 +27,7 @@
 		"dist/"
 	],
 	"scripts": {
-		"build": "rollup --config",
+		"build": "rollup --config --configPlugin rollup-plugin-ts",
 		"clean": "git clean --interactive -dx --exclude node_modules/ --exclude .husky/",
 		"fix": "npm run fix:prettier",
 		"fix:prettier": "npm run lint:prettier -- --write",
