@@ -15,14 +15,18 @@
 	"sideEffects": false,
 	"exports": {
 		"node": {
+			"types": "./dist/node.d.mts",
 			"import": "./dist/node.mjs",
 			"require": "./dist/node.js"
 		},
-		"default": "./dist/default.mjs"
+		"default": {
+			"types": "./dist/default.d.mts",
+			"import": "./dist/default.mjs"
+		}
 	},
 	"main": "./dist/node.js",
 	"module": "./dist/default.mjs",
-	"types": "./dist/default.d.ts",
+	"types": "./dist/default.d.mts",
 	"files": [
 		"dist/"
 	],
