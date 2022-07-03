@@ -21,12 +21,13 @@
 		},
 		"default": {
 			"types": "./dist/default.d.mts",
-			"import": "./dist/default.mjs"
+			"import": "./dist/default.mjs",
+			"require": "./dist/default.js"
 		}
 	},
 	"main": "./dist/node.js",
 	"module": "./dist/default.mjs",
-	"types": "./dist/default.d.mts",
+	"types": "./dist/default.d.ts",
 	"files": [
 		"dist/"
 	],

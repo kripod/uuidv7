@@ -9,6 +9,10 @@ export default defineConfig([
 				file: "dist/default.mjs",
 				format: "esm",
 			},
+			{
+				file: "dist/default.js",
+				format: "cjs",
+			},
 		],
 		plugins: [
 			ts({
