@@ -1,6 +1,6 @@
 {
 	"name": "@kripod/uuidv7",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"description": "UUIDv7 generator with millisecond precision",
 	"keywords": [
 		"id-generator",
